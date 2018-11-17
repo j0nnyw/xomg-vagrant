@@ -1,3 +1,8 @@
 # vagrant directory
 .vagrant
 ubuntu-xenial-16.04-cloudimg-console.log
+
+# Vim: swap files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.vim
