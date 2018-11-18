@@ -3,6 +3,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "bootstrap.sh"
   config.vm.provision "shell", path: "environment.sh", privileged: false
   config.vm.synced_folder "scripts/", "/home/vagrant/scripts", owner: "vagrant", group: "vagrant"
+  config.vm.synced_folder "tests/", "/home/vagrant/tests", owner: "vagrant", group: "vagrant"
   config.vm.provider "virtualbox" do |v|
         v.memory = 4096
         v.cpus = 2
